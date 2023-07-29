@@ -1,0 +1,109 @@
+{
+    "name": "سورس ميوزك رنثـون",
+    "description": "سورس رنثـون لتشغيل الاغاني , رائع انت تستخدم احدث اصدار !",
+    "logo": "https://telegra.ph/file/7a9910921ed8aedbb9ee5.jpg",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/RRR8RR/L_A_1_7",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "اكتب هنا كود بايروجرام , ملاحظة عليك استخراج الجلسه من البوت https://t.me/RUNTHONBOT",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "اكتب ايدي مالك البوت ، او اتركها كما هي",
+            "required": true,
+            "value": "6186856384"
+        },
+        "ASSID": {
+            "description": "اكتب ايدي حساب المساعد ",
+            "required": true,
+            "value": ""
+        },
+        "BG_IMG": {
+            "description": "يفضل تركها كما هي ، ضع هنا رابط صورة تلكراف يضهر عند تشغيل الاغنية ",
+            "required": true,
+            "value": "https://telegra.ph/file/150bac692acda819021d8.jpg"
+        },
+        "ASSNAME": {
+            "description": "اكتب هنا اسم حساب المساعد",
+            "required": true,
+            "value": ""
+        },
+        "ASSUSERNAME": {
+            "description": "اكتب هنا يوزر حساب المساعد بدون @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_ID": {
+            "description": "اكتب هنا ايدي البوت",
+            "required": true,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "اكتب هنا يوزر البوت بدون @",
+            "required": true,
+            "value": ""
+        },
+        "SUPPORT": {
+            "description": "اكتب هنا قناة الدعم او اتركها كما هي",
+            "required": true,
+            "value": "xLxLxLrr"
+        },
+        "UPDATE": {
+            "description": "اكتب هنا قناة المطور او اتركها كما هي",
+            "required": true,
+            "value": "xLxLxLrr"
+        },
+        "OWNER_USERNAME": {
+            "description": "اكتب هنا يوزر المطور او المالك",
+            "required": true,
+            "value": "L_A_1"
+        },
+        "BOT_NAME": {
+            "description": "اكتب هنا اسم بوتك او اتركها كما هي",
+            "required": true,
+            "value": "رنثـون"
+        },
+        "START_PIC": {
+            "description": "ضع رابط صورة تلكراف يضهر لكليشة ستارت",
+            "value": "https://telegra.ph/file/adf19ea05b9769d6f1ce2.jpg",
+            "required": true
+            
+        },
+        "API_ID": {
+            "description": "لاتغيرها ابدا",
+            "required": true,
+            "value": "8934899"
+        },
+        "API_HASH": {
+            "description": "لاتغيرها ابدا",
+            "required": true,
+            "value": "bf3e98d2c351e4ad06946b4897374a1e"
+        },
+        "SUDO_USERS": {
+            "description": "اكتب هنا ايديات المطورين او اتركها كما هي .",
+            "required": true,
+            "value": "6186856384"
+        },
+        "BOT_TOKEN": {
+            "description": "اكتب توكن البوت ",
+            "required": true,
+            "value": ""
+        },
+        "MONGO_DB_URI": {
+            "description": "لاتغيرها ابدا ابدا",
+            "required": true,
+            "value": "mongodb+srv://Cloner:Cloner@cluster0.cgc6t.mongodb.net/?retryWrites=true&w=majority"
+            
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
