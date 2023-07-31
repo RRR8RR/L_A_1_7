@@ -208,3 +208,4 @@ async def kut(client, message: Message):
 
 rnthon = random.choice(Citation1_morning)
     await message.reply(f"{rnthon}")
+    
