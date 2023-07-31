@@ -79,6 +79,8 @@ async def all_set(_, query: CallbackQuery):
 
 - جراف | لتحويل صورة الى رابط تليجراف .
 
+- كت | للتسليه .
+
 - مطور البوت | @{OWNER_USERNAME}""",
         reply_markup=InlineKeyboardMarkup(
             [
