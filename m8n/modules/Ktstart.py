@@ -6,8 +6,8 @@ from sys import version_info
 from time import time
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from SedthonMusic import app
-from SedthonMusic.utils.decorators.admins import AdminActual
+from m8n import app
+from m8n.utils.decorators.admins import AdminActual
 from strings import get_command
 from strings.filters import command
 
