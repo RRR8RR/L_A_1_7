@@ -1,10 +1,10 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs18
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install ffmpeg -y
+FROM python:3.8-slim-buster
 
-COPY . /app/
-WORKDIR /app/
-RUN pip3 install -U pip
-RUN pip3 install -U -r requirements.txt
-CMD python3 -m m8n
+ WORKDIR /app
 
+ COPY requirements.txt requirements.txt
+ RUN pip3 install -r requirements.txt
+
+ COPY . .
+
+ CMD [ "python3", "-m", "m8n"]
